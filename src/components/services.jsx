@@ -7,8 +7,7 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            At 5.J. Construction, we offer a comprehensive range of concrete-related services in Covington, Georgia, and the surrounding areas. We are dedicated to providing affordable and high-quality solutions for all your concrete needs, from residential driveways and patios to commercial foundations and more. Our experienced team ensures durable and reliable results on every project.
           </p>
         </div>
         <div className="row">

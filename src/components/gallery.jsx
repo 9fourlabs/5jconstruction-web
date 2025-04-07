@@ -8,8 +8,7 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Explore our gallery to see examples of the quality concrete work we deliver at 5.J. Construction in Covington, Georgia. From durable driveways and inviting patios to solid foundations and custom finishes, our portfolio showcases our commitment to excellent results.
           </p>
         </div>
         <div className="row">
