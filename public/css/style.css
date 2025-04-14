@@ -166,16 +166,22 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
-  padding: 14px 34px;
+  background-color: #009ffd;
+  background-image: linear-gradient(135deg, #2a2a72 0%, #009ffd 100%);
+  padding: 16px 36px;
   letter-spacing: 1px;
   margin: 0;
   font-size: 15px;
-  font-weight: 500;
-  border-radius: 25px;
-  transition: all 0.5s linear;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
   border: 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 .btn-custom:hover,
 .btn-custom:focus,
@@ -205,8 +211,10 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table;
+  display: flex;
+  align-items: center;
   width: 100%;
+  min-height: 100vh;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
@@ -214,6 +222,24 @@ a:focus,
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    min-height: 60vh;
+  }
+  .intro h1 {
+    font-size: 42px !important;
+    margin-top: 0 !important;
+  }
+  .intro p {
+    font-size: 18px !important;
+    padding: 0 15px;
+  }
+  header .intro-text {
+    padding-top: 150px !important;
+    padding-bottom: 100px !important;
+  }
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
@@ -311,9 +337,32 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-  padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  padding: 80px 0;
+  background: linear-gradient(135deg, #2a2a72 0%, #009ffd 100%);
   color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+#services .service-desc {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease;
+  height: 100%;
+  margin: 15px 0;
+}
+
+#services .service-desc:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  #services {
+    padding: 40px 0;
+  }
+  #services .service-desc {
+    margin: 10px 0;
+  }
 }
 #services .service-desc {
   margin: 10px 10px 20px;
