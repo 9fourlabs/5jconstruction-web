@@ -2,7 +2,21 @@ import React from "react";
 
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <>
+      <div style={{
+        backgroundColor: '#009ffd',
+        color: 'white',
+        textAlign: 'center',
+        padding: '8px 0',
+        fontWeight: '600',
+        position: 'fixed',
+        width: '100%',
+        top: 0,
+        zIndex: 1031
+      }}>
+        Contact us now for a FREE quote: <a href="tel:+17704025691" style={{color: 'white', textDecoration: 'underline'}}>(770) 402-5691</a>
+      </div>
+      <nav id="menu" className="navbar navbar-default navbar-fixed-top" style={{top: '36px'}}>
       <div className="container">
         <div className="navbar-header">
           <button
@@ -51,5 +65,6 @@ export const Navigation = (props) => {
         </div>
       </div>
     </nav>
+    </>
   );
 };
